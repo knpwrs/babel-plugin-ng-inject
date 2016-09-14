@@ -14,7 +14,7 @@ const isInjectDirective = d => d.value.value === 'ngInject';
  * @return {Object} Babel visitor.
  */
 export default function ({ types: t }) {
-  const functionVisitor = path => {
+  const functionVisitor = (path) => {
     // Check if we should inject
     if (!_.some(path.node.body.directives, isInjectDirective)) return;
     // Remove ngInject directive
