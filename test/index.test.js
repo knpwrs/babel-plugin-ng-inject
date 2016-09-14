@@ -13,7 +13,7 @@ function run(code) {
   }).code]);
 }
 
-test('it should inject when ngInject directive is present', t => {
+test('it should inject when ngInject directive is present', (t) => {
   const input = clean`angular.module('MyMod').controller('MyCtrl', function ($scope, $timeout) {
     'ngInject';
   });`;
@@ -24,7 +24,7 @@ test('it should inject when ngInject directive is present', t => {
   t.end();
 });
 
-test('it should work for arrow functions', t => {
+test('it should work for arrow functions', (t) => {
   const input = clean`angular.module('MyMod').controller('MyCtrl', ($scope, $timeout) => {
     'ngInject';
   })`;
@@ -34,7 +34,7 @@ test('it should work for arrow functions', t => {
   t.end();
 });
 
-test('it should leave everything alone when ngInject directive is not present', t => {
+test('it should leave everything alone when ngInject directive is not present', (t) => {
   const input = clean`angular.module('MyMod').controller('MyCtrl', function ($scope, $timeout) {
   });`;
   const output = run(input);
