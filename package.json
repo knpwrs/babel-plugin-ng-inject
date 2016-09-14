@@ -6,8 +6,8 @@
   "scripts": {
     "build": "babel src --out-dir lib",
     "clean": "rimraf lib",
-    "pretest": "eslint src test",
     "test": "babel-node ./test/index.test.js | faucet",
+    "posttest": "eslint src test",
     "prepublish": "npm run build"
   },
   "repository": "knpwrs/babel-plugin-ng-inject",
