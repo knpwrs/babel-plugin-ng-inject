@@ -20,7 +20,7 @@
   "author": "Kenneth Powers <ken@kenpowers.net> (http://knpw.rs)",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.11.2"
+    "lodash": "^4.16.5"
   },
   "devDependencies": {
     "babel-cli": "^6.8.0",
