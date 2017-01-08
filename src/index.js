@@ -20,7 +20,7 @@ export default function ({ types: t }) {
     // Remove ngInject directive
     path.node.body.directives = _.reject( // eslint-disable-line no-param-reassign
       path.node.body.directives,
-      isInjectDirective
+      isInjectDirective,
     );
     // Construct array for injection annotations
     const arr = _.map(path.node.params, p => t.stringLiteral(p.name));
