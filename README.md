@@ -1,5 +1,7 @@
 # babel-plugin-ng-inject
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/knpwrs/babel-plugin-ng-inject.svg)](https://greenkeeper.io/)
+
 Like [`ng-annotate`] except it runs as a part of your Babel build (like
 [`babel-plugin-ng-annotate`] except it doesn't use ES7 decorators).
 
